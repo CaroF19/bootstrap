@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+</head>
+<style>
+  body {
+      background-color: #67d2f3; /* Cambio el color fondo */
+  }
+</style>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-colorfondo" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#collapseOne">Ventajas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#collapseTwo">Desventajas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <!-- Cierre barra de navegación -->
+
+  <!-- Carrusel de imágenes -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="css/bootstrap-carousel-01.jpg" class="d-block w-100 custom-img-size" alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+            <img src="css/logo_bootstrap.jpg" class="d-block w-100 custom-img-size" alt="Imagen 2">
+        </div>
+        <div class="carousel-item">
+            <img src="css/Tercera imagen.jpg" class="d-block w-100 custom-img-size" alt="Imagen 3">
+        </div>
+        <div class="carousel-item">
+            <img src="css/cuarta imagen.jpg" class="d-block w-100 custom-img-size" alt="Imagen 4">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Fin del Carrusel -->
+
+  <!-- Título y texto -->
+  <div class="container text-center">
+      <div class="display-3">Bootstrap: ¿bueno o malo?</div>
+      <p class="lead text-center">Un adentramiento en las ventajas y desventajas de utilizar Bootstrap.</p>
+      <p class="text-end"></p>
+  </div>
+  <!-- Fin del título y texto -->
+
+  <!-- Definición -->
+   <br><br>
+<div class="Definicion">
+    <p>Bootstrap es un popular conjunto de herramientas de código abierto diseñado para el desarrollo web responsive, ideal para adaptar sitios a diferentes dispositivos y pantallas.</p>
+<br><br>
+</div>
+<!-- Fin definición -->
+
+  <!-- Acordeón -->
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Ventajas
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            - Rápido desarrollo: Permite crear rápidamente interfaces de usuario con componentes preestablecidos y estilos CSS, lo que acelera el proceso de desarrollo.
+            <br>
+            - Responsive design: Proporciona un sistema de cuadrícula y componentes que se adaptan automáticamente a diferentes tamaños de pantalla, lo que facilita la creación de sitios web responsive.      
+            <br>      
+            - Consistencia visual: Utiliza clases CSS predefinidas y componentes que siguen las mejores prácticas de diseño, lo que ayuda a mantener una apariencia visual coherente en todo el sitio.
+            <br>
+            - Documentación extensa: Bootstrap tiene una documentación completa y clara, lo que facilita aprender a usarlo y resolver problemas rápidamente.
+            <br>
+            - Soporte y comunidad activa: Tiene una gran comunidad de usuarios y desarrolladores que contribuyen con soporte, recursos y plugins, lo que facilita la resolución de problemas y la mejora continua del framework.
+            <br>
+            - Personalización: Aunque ofrece muchas características listas para usar, Bootstrap permite la personalización a través de variables CSS y opciones de configuración, lo que permite adaptar el diseño y la funcionalidad según las necesidades del proyecto.
+        
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Desventajas
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            - Pesado en tamaño: Incluir Bootstrap puede resultar en archivos CSS y JavaScript relativamente grandes, especialmente si se utilizan muchas características del framework, lo que puede afectar el rendimiento del sitio si no se optimizan adecuadamente.
+            <br>
+            - Dependencia de clases específicas: El uso excesivo de las clases predefinidas de Bootstrap puede llevar a un código HTML lleno de clases que no siempre son semánticamente apropiadas, lo que podría complicar el mantenimiento y la personalización a largo plazo.
+            <br>
+            - Apariencia genérica: Debido a su popularidad, los sitios web desarrollados con Bootstrap pueden tener una apariencia genérica o similar entre sí, a menos que se realicen modificaciones significativas en el diseño.
+            <br>
+            - Curva de aprendizaje inicial: Aunque la documentación de Bootstrap es extensa, puede requerir tiempo y esfuerzo aprender cómo personalizar y aprovechar al máximo todas sus características.
+            <br>
+            - Actualizaciones y compatibilidad: Actualizar Bootstrap a nuevas versiones puede requerir ajustes en el código existente y puede haber problemas de compatibilidad con plugins o personalizaciones realizadas. 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin del acordeón -->
+
+<!-- Inicio imagen Adobe Firefly -->
+ <div id="firefly"></div>
+    <img src="css/Firefly.jpg" alt="">
+ </div>
+<!-- Fin imagen Adobe Firefly -->
+
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleInterval'), {
+        interval: 2500,
+        wrap: true
+      });
+
+      // Script para manejar el desplazamiento suave y la activación del acordeón
+      const links = document.querySelectorAll('.nav-link');
+      links.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1); // Eliminar el "#" del href
+          const target = document.getElementById(targetId);
+          if (target) {
+            // Cerrar todos los acordeones abiertos
+            const accordions = document.querySelectorAll('.accordion .accordion-collapse');
+            accordions.forEach(acc => {
+              if (acc.classList.contains('show')) {
+                acc.classList.remove('show');
+              }
+            });
+
+            // Abrir el acordeón correspondiente
+            target.classList.add('show');
+
+            // Desplazar la página al acordeón
+            target.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

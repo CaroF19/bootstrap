@@ -1,0 +1,13 @@
+#firefly{
+    display: flex;
+
+}
+.accordion{
+    text-align: justify;
+}
+.Definicion{
+    background: linear-gradient(lightblue , white);
+    text-align: justify;
+    font-size: x-large;
+    display: flex;
+}
