@@ -1,6 +1,3 @@
-body {
-    background-color: #67d2f3; 
-}
 
 #firefly {
     display: flex;
@@ -10,11 +7,17 @@ body {
 }
 
 #firefly img {
-    max-width: 50%; 
+    max-width: 90%; 
     height: auto;
 }
 
 .accordion {
     text-align: justify;
-
+    
+}
+.Definicion{
+    background: linear-gradient(lightblue , white);
+    text-align: justify;
+    font-size: x-large;
+    display: flex;
 }
