@@ -1,13 +1,20 @@
-#firefly{
-    display: flex;
+body {
+    background-color: #67d2f3; 
+}
 
-}
-.accordion{
-    text-align: justify;
-}
-.Definicion{
-    background: linear-gradient(lightblue , white);
-    text-align: justify;
-    font-size: x-large;
+#firefly {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+
+#firefly img {
+    max-width: 50%; 
+    height: auto;
+}
+
+.accordion {
+    text-align: justify;
+
 }
